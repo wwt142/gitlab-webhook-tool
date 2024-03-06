@@ -82,7 +82,7 @@ func mergeRequestNotify(bodyBytes []byte, feishuWebhook string) {
 		"userName":     body.User.Username + "(" + body.User.Name + ")",
 		"sourceBranch": body.ObjectAttributes.SourceBranch,
 		"targetBranch": body.ObjectAttributes.TargetBranch,
-		"webUrl":       body.Project.WebURL + "/merge_requests",
+		"webUrl":       body.Project.WebURL + "/-/merge_requests",
 		"title":        title,
 		"headerColor":  headerColor,
 	})
@@ -147,7 +147,7 @@ func pushNotify(bodyBytes []byte, feishuWebhook string) {
 		"projectName": body.Project.Name,
 		"userName":    body.UserName,
 		"ref":         body.Ref,
-		"webUrl":      body.Project.WebURL + "/commits/" + branch,
+		"webUrl":      body.Project.WebURL + "/-/commits/" + branch,
 		"commit":      commits,
 		"title":       title,
 		"headerColor": headerColor,
