@@ -132,6 +132,25 @@ func MergeRequestFeishuCardTmpl() string {
 			},
 			{
 				"tag": "div",
+				"fields": [
+				  {
+					"is_short": true,
+					"text": {
+					  "tag": "lark_md",
+					  "content": "**合并标题：**{{.mergeTitle}}"
+					}
+				  },
+				  {
+					"is_short": true,
+					"text": {
+					  "tag": "lark_md",
+					  "content": " "
+					}
+				  }
+				]
+			},
+			{
+				"tag": "div",
 				"text": {
 					"content":"<at id=7337884226983575556>自增</at><at id=7337940174229585948>文滔</at><at id=7337660809616687106>永军</at><at id=7337661571016949762>明杰</at>",
 					"tag":"lark_md"

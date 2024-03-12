@@ -85,6 +85,7 @@ func mergeRequestNotify(bodyBytes []byte, feishuWebhook string) {
 		"webUrl":       body.ObjectAttributes.URL,
 		"title":        title,
 		"headerColor":  headerColor,
+		"mergeTitle":   body.ObjectAttributes.Title,
 	})
 	var cardBody internal.FeishuCard
 	cardBody.MsgType = "interactive"
