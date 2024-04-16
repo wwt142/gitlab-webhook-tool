@@ -152,7 +152,7 @@ func MergeRequestFeishuCardTmpl() string {
 			{
 				"tag": "div",
 				"text": {
-					"content":"<at id=7337884226983575556>自增</at><at id=7337940174229585948>文滔</at><at id=7337660809616687106>永军</at><at id=7337661571016949762>明杰</at>",
+					"content":"<at id=7337884226983575556>自增</at><at id=7337660809616687106>永军</at><at id=7337660809616687106>永军</at><at id=7337661571016949762>明杰</at>",
 					"tag":"lark_md"
 				}
 			}
